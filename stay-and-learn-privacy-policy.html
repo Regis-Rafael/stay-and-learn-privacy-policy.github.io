@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Stay and Learn</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6b8cbe;
+            --accent-color: #ff6b6b;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 30px;
+            position: relative;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .app-name {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+        
+        .language-toggle {
+            position: absolute;
+            top: 90px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .language-toggle:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .language-toggle:active {
+            transform: translateY(0);
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .section:hover {
+            box-shadow: var(--box-shadow);
+            transform: translateY(-3px);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin: 10px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border-radius: var(--border-radius);
+            margin-top: 20px;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .update-date {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
+            color: #6c757d;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .language-toggle {
+                position: relative;
+                top: auto;
+                right: auto;
+                margin: 0 auto 20px;
+                display: block;
+                width: fit-content;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Política de Privacidade - <span class="app-name">Stay and Learn</span></h1>
+            <p>Última atualização: 30 de maio de 2025</p>
+            <button id="language-toggle" class="language-toggle">
+                <span class="translate-icon">🌐</span>
+                Traduzir para Inglês
+            </button>
+        </header>
+        
+        <div class="content">
+            <div id="portuguese-version">
+                <div class="section">
+                    <h2>1. Informações Coletadas</h2>
+                    <p>O aplicativo coleta as seguintes informações fornecidas diretamente pelo usuário:</p>
+                    <ul>
+                        <li><strong>Nome de usuário (username):</strong> criado pelo próprio usuário</li>
+                        <li><strong>Endereço de e-mail</strong></li>
+                        <li><strong>Senha:</strong> criada e confirmada pelo usuário</li>
+                    </ul>
+                    <p>Além disso, também coletamos:</p>
+                    <ul>
+                        <li><strong>Fotos e imagens:</strong> fornecidas pelo usuário para uso nas postagens, mediante permissão de câmera ou acesso à galeria</li>
+                    </ul>
+                    <p>Nenhum outro dado pessoal é coletado.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>2. Uso das Informações</h2>
+                    <p>As informações são utilizadas exclusivamente para:</p>
+                    <ul>
+                        <li>Criar e gerenciar a conta do usuário</li>
+                        <li>Permitir login seguro via token JWT</li>
+                        <li>Publicar conteúdos no aplicativo (posts com imagem)</li>
+                        <li>Garantir o bom funcionamento e segurança do app</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>3. Segurança</h2>
+                    <p>Levamos a segurança de seus dados a sério. Adotamos as seguintes medidas:</p>
+                    <ul>
+                        <li>Todos os dados trafegam e são armazenados de forma criptografada</li>
+                        <li>Utilizamos <strong>JWT (JSON Web Tokens)</strong> para autenticação e controle de sessões</li>
+                        <li>Utilizamos <strong>SecureStore</strong> no aplicativo para guardar informações sensíveis de forma segura</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>4. Permissões</h2>
+                    <p>Para funcionamento completo, o aplicativo requer as seguintes permissões:</p>
+                    <ul>
+                        <li><strong>Câmera:</strong> para capturar imagens nas postagens (apenas se o usuário optar por usar a câmera)</li>
+                        <li><strong>Galeria/armazenamento:</strong> para selecionar imagens salvas no dispositivo</li>
+                    </ul>
+                    <p>Essas permissões são solicitadas diretamente no momento do uso e são opcionais.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>5. Compartilhamento de Dados</h2>
+                    <p><strong>Não compartilhamos, vendemos ou divulgamos seus dados pessoais a terceiros.</strong></p>
+                    <p>O uso de serviços como armazenamento e autenticação é feito de forma segura e restrita, respeitando esta política.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>6. Seus Direitos</h2>
+                    <p>Você pode, a qualquer momento:</p>
+                    <ul>
+                        <li>Acessar, corrigir ou excluir suas informações</li>
+                        <li>Solicitar a exclusão de sua conta e dados associados</li>
+                        <li>Retirar permissões de câmera ou galeria nas configurações do sistema operacional do seu dispositivo</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>7. Crianças</h2>
+                    <p>O aplicativo <strong>não se destina a menores de 13 anos</strong>. Caso identifiquemos uso por menores, tomaremos providências para excluir a conta e os dados imediatamente.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>8. Alterações nesta Política</h2>
+                    <p>Esta Política poderá ser atualizada a qualquer momento. Sempre que houver mudanças significativas, você será notificado por meio do aplicativo.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>9. Contato</h2>
+                    <p>Em caso de dúvidas, sugestões ou solicitações relacionadas à sua privacidade, entre em contato:</p>
+                    <div class="contact-info">
+                        <p>📧 <strong>stayandlearnfeedbacks@gmail.com</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="english-version" style="display:none;">
+                <div class="section">
+                    <h2>1. Collected Information</h2>
+                    <p>The application collects the following information provided directly by the user:</p>
+                    <ul>
+                        <li><strong>Username:</strong> created by the user</li>
+                        <li><strong>Email address</strong></li>
+                        <li><strong>Password:</strong> created and confirmed by the user</li>
+                    </ul>
+                    <p>Additionally, we also collect:</p>
+                    <ul>
+                        <li><strong>Photos and images:</strong> provided by the user for use in posts, subject to camera permission or gallery access</li>
+                    </ul>
+                    <p>No other personal data is collected.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>2. Use of Information</h2>
+                    <p>The information is used exclusively for:</p>
+                    <ul>
+                        <li>Creating and managing user accounts</li>
+                        <li>Enabling secure login via JWT tokens</li>
+                        <li>Publishing content in the application (posts with images)</li>
+                        <li>Ensuring proper functioning and security of the app</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>3. Security</h2>
+                    <p>We take the security of your data seriously. We implement the following measures:</p>
+                    <ul>
+                        <li>All data is transmitted and stored in encrypted form</li>
+                        <li>We use <strong>JWT (JSON Web Tokens)</strong> for authentication and session control</li>
+                        <li>We use <strong>SecureStore</strong> in the application to securely store sensitive information</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>4. Permissions</h2>
+                    <p>For full functionality, the application requires the following permissions:</p>
+                    <ul>
+                        <li><strong>Camera:</strong> to capture images for posts (only if the user chooses to use the camera)</li>
+                        <li><strong>Gallery/storage:</strong> to select images saved on the device</li>
+                    </ul>
+                    <p>These permissions are requested directly at the time of use and are optional.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>5. Data Sharing</h2>
+                    <p><strong>We do not share, sell, or disclose your personal data to third parties.</strong></p>
+                    <p>The use of services such as storage and authentication is done securely and restrictively, respecting this policy.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>6. Your Rights</h2>
+                    <p>You may, at any time:</p>
+                    <ul>
+                        <li>Access, correct, or delete your information</li>
+                        <li>Request deletion of your account and associated data</li>
+                        <li>Revoke camera or gallery permissions in your device's operating system settings</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>7. Children</h2>
+                    <p>The application is <strong>not intended for children under 13 years of age</strong>. If we identify usage by minors, we will take measures to delete the account and data immediately.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>8. Changes to this Policy</h2>
+                    <p>This Policy may be updated at any time. Whenever there are significant changes, you will be notified through the application.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>9. Contact</h2>
+                    <p>For questions, suggestions, or requests related to your privacy, please contact us:</p>
+                    <div class="contact-info">
+                        <p>📧 <strong>stayandlearnfeedbacks@gmail.com</strong></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="update-date">
+                Última atualização: 30 de maio de 2025
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('language-toggle').addEventListener('click', function() {
+            const portugueseVersion = document.getElementById('portuguese-version');
+            const englishVersion = document.getElementById('english-version');
+            const button = this;
+            
+            if (portugueseVersion.style.display === 'none') {
+                // Switch to Portuguese
+                portugueseVersion.style.display = 'block';
+                englishVersion.style.display = 'none';
+                button.innerHTML = '<span class="translate-icon">🌐</span> Traduzir para Inglês';
+                document.querySelector('.update-date').textContent = 'Última atualização: 30 de maio de 2025';
+            } else {
+                // Switch to English
+                portugueseVersion.style.display = 'none';
+                englishVersion.style.display = 'block';
+                button.innerHTML = '<span class="translate-icon">🌐</span> Translate to Portuguese';
+                document.querySelector('.update-date').textContent = 'Last updated: May 30, 2025';
+            }
+        });
+    </script>
+</body>
+</html>
